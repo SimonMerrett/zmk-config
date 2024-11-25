@@ -1,0 +1,12 @@
+if SHIELD_XPANDER_XIAO
+
+config ZMK_KEYBOARD_NAME
+    default "ZMK Tester"
+
+config ZMK_BLE
+    def_bool n
+
+config SETTINGS
+    def_bool n
+
+endif
