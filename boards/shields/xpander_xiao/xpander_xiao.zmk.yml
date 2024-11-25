@@ -1,0 +1,6 @@
+file_format: "1"
+id: xpander_xiao
+name: XpanderXiao
+type: shield
+url: https://zmk.dev/docs/troubleshooting/hardware-issues
+requires: [seeed_xiao]
