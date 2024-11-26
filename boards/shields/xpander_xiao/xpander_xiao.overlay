@@ -34,22 +34,22 @@
         RC(0,0)  RC(0,1)  RC(0,2)  RC(0,3)  RC(0,4)  RC(0,5)  RC(0,6)  RC(0,7)  RC(0,8)  RC(0,9)  RC(0,10)
         >;
     };
+};
 
-    xiao_i2c {
-        //pinctrl-0 = <&sercom2_i2c_default>;
-        //pinctrl-names = "default";
+&xiao_i2c {
+    //pinctrl-0 = <&sercom2_i2c_default>;
+    //pinctrl-names = "default";
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
+    #address-cells = <1>;
+    #size-cells = <0>;
+    
+    xpander_io: mcp23017@20 {
+        compatible = "microchip,mcp230xx";
         status = "okay";
-        clock-frequency = <I2C_BITRATE_FAST>;
-        #address-cells = <1>;
-        #size-cells = <0>;
-        
-        xpander_io: mcp23017@20 {
-            compatible = "microchip,mcp230xx";
-            status = "okay";
-            gpio-controller;
-            reg = <0x20>; // was 0x20 - should be 0x40? Does address get shifted left by a bit?
-            #gpio-cells = <2>;
-            ngpios = <16>;
-        };
+        gpio-controller;
+        reg = <0x20>; // was 0x20 - should be 0x40? Does address get shifted left by a bit?
+        #gpio-cells = <2>;
+        ngpios = <16>;
     };
 };
