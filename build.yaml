@@ -20,3 +20,5 @@
 include:
   - board: seeeduino_xiao
     shield: tester_xiao
+  - board: seeeduino_xiao
+    shield: xpander_xiao
