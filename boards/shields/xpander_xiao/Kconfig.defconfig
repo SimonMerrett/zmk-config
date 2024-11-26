@@ -1,7 +1,7 @@
 if SHIELD_XPANDER_XIAO
 
 config ZMK_KEYBOARD_NAME
-    default "ZMK Tester"
+    default "ZMK Xpander"
 
 config ZMK_BLE
     def_bool n
