@@ -16,8 +16,8 @@
             , <&xiao_d 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&xiao_d 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&xpander_io 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&xpander_io 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&xpander_io 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&xpander_io 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&xiao_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&xiao_d 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
