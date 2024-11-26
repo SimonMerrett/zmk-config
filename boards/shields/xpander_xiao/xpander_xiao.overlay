@@ -35,7 +35,7 @@
         >;
     };
 
-    &sercom2 {
+    &xiao_i2c {
     pinctrl-0 = <&sercom2_i2c_default>;
     pinctrl-names = "default";
     status = "okay";
